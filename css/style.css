@@ -208,7 +208,6 @@ section {
 }
 
 @keyframes professionRotate {
-
     0%,
     20% {
         transform: rotate(0deg);
@@ -616,7 +615,6 @@ span {
     color: #333;
 }
 
-
 /* BREAKPOINTS */
 @media (max-width: 1200px) {
     html {
@@ -669,7 +667,6 @@ span {
 }
 
 @media (max-width: 991px) {
-
     .navbar a:nth-child(1) {
         color: var(--main-color);
     }
@@ -692,7 +689,8 @@ span {
     }
 
     .home-img img {
-        display: none;
+        display: block;
+        max-width: 350px;
     }
 
     .footer {
@@ -776,9 +774,15 @@ span {
     }
 
     .home {
+        flex-direction: column;
         padding: 0 3% 23rem;
         justify-content: center;
         text-align: center;
+    }
+
+    .home .home-content {
+        max-width: 100%;
+        z-index: 2;
     }
 
     .home-content h3 {
@@ -791,6 +795,25 @@ span {
 
     .home-content .social-media a {
         margin: 2.5rem .75rem 3rem;
+    }
+
+    .home-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        z-index: 2;
+    }
+
+    .home-img img {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        display: block;
+        max-width: 280px;
+        width: 70%;
+        height: auto;
+        max-height: none;
     }
 
     .home .profession-container {
@@ -936,6 +959,7 @@ span {
         font-size: 4.5rem;
     }
 }
+
 img {
     border-radius: 20px;
 }
