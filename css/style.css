@@ -724,6 +724,32 @@ span {
     }
 }
 
+@keyframes professionRotateMobile {
+    0%,
+    20% {
+        transform: translate(-50%, -50%) scale(.55) rotate(0deg);
+    }
+
+    25%,
+    45% {
+        transform: translate(-50%, -50%) scale(.55) rotate(-90deg);
+    }
+
+    50%,
+    70% {
+        transform: translate(-50%, -50%) scale(.55) rotate(-180deg);
+    }
+
+    75%,
+    95% {
+        transform: translate(-50%, -50%) scale(.55) rotate(-270deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(.55) rotate(-360deg);
+    }
+}
+
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
@@ -775,15 +801,17 @@ span {
 
     .home {
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         text-align: center;
-        padding: 12rem 3% 6rem;
+        padding: 12rem 3% 4rem;
         min-height: auto;
+        overflow: hidden;
     }
 
     .home .home-content {
         max-width: 100%;
-        z-index: 2;
+        order: 1;
+        z-index: 3;
     }
 
     .home-content h3 {
@@ -806,20 +834,13 @@ span {
         margin: 2.5rem .75rem 3rem;
     }
 
-    .home .profession-container,
-    .home .profession-container .profession-box,
-    .home .profession-container .overlay,
-    .home .profession-box .circle,
-    .home .profession-box .profession {
-        display: none !important;
-    }
-
     .home-img {
+        order: 2;
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 3rem;
-        z-index: 2;
+        margin: 3rem 0 2rem;
+        z-index: 3;
     }
 
     .home-img img {
@@ -827,10 +848,60 @@ span {
         right: auto;
         bottom: auto;
         display: block;
-        width: 75%;
-        max-width: 300px;
+        width: 70%;
+        max-width: 280px;
         height: auto;
         max-height: none;
+    }
+
+    .home .profession-container {
+        order: 3;
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        width: 100%;
+        height: 28rem;
+        margin-top: 1rem;
+        overflow: hidden;
+        pointer-events: none;
+        opacity: .28;
+        z-index: 1;
+    }
+
+    .home .profession-container .profession-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        right: auto;
+        width: 768px;
+        height: 768px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: professionRotateMobile 13s ease-out infinite;
+    }
+
+    .home .profession-box .profession {
+        background: transparent;
+        padding: 8px 0;
+    }
+
+    .home .profession i {
+        font-size: 3rem;
+    }
+
+    .home .profession h3 {
+        font-size: 2.2rem;
+    }
+
+    .home .profession-container .overlay {
+        display: none;
+    }
+
+    .home .profession-box .circle {
+        width: 560px;
+        height: 560px;
     }
 
     .about {
@@ -876,6 +947,19 @@ span {
         right: 6rem;
     }
 
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home .profession-container {
+        height: 24rem;
+        opacity: .22;
+    }
+
+    .home .profession-container .profession-box {
+        animation: professionRotateMobile 13s ease-out infinite;
+    }
+
     .contact form .input-box input {
         width: 100%;
     }
@@ -894,11 +978,15 @@ span {
     .about-img img {
         width: 90vw;
     }
+
+    .home-img img {
+        max-width: 240px;
+    }
 }
 
 @media (max-width: 315px) {
     .home-content h1 {
-        font-size: 4.5rem;
+        font-size: 3.6rem;
     }
 }
 
