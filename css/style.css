@@ -139,7 +139,7 @@ span {
     display: grid;
     grid-template-columns: 1.38fr 0.62fr;
     align-items: center;
-    gap: 1rem;
+    gap: 0;
     min-height: 100vh;
     padding-top: 14rem;
 }
@@ -149,7 +149,7 @@ span {
     align-items: center;
     justify-content: flex-start;
     overflow: visible;
-    margin-left: -2rem;
+    margin-left: -3rem;
 }
 
 .home-brand img {
@@ -163,7 +163,7 @@ span {
 .home .home-content {
     max-width: 54rem;
     margin-left: auto;
-    padding-left: 0rem;
+    padding-left: 0;
 }
 
 .home-content h3 {
@@ -305,6 +305,7 @@ span {
     border: 1px solid rgba(79, 220, 255, 0.18);
     transition: .35s ease;
 }
+
 .services-container .services-box:hover {
     transform: translateY(-6px);
     box-shadow: 0 1.2rem 2.6rem rgba(0, 0, 0, .24);
@@ -597,7 +598,7 @@ span {
     }
 
     .home-brand img {
-    max-width: 90rem;
+        max-width: 90rem;
     }
 }
 
@@ -616,7 +617,6 @@ span {
 
     .home {
         grid-template-columns: 1.28fr 0.72fr;
-        
     }
 
     .home-content h1 {
@@ -637,13 +637,17 @@ span {
         padding-top: 13rem;
         padding-bottom: 5rem;
     }
-.home-brand {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    overflow: visible;
-    margin-left: -3rem;
-}
+
+    .home-brand {
+        order: 1;
+        justify-content: center;
+        overflow: visible;
+        margin-left: 0;
+    }
+
+    .home-brand img {
+        max-width: 72rem;
+    }
 
     .home-content {
         order: 2;
@@ -680,7 +684,7 @@ span {
     }
 
     .logo-brand img {
-        height: 5.2rem;
+        height: 5.8rem;
     }
 
     .navbar {
@@ -718,10 +722,10 @@ span {
         padding: 12rem 3% 5rem;
     }
 
-   .home-brand img {
-    max-width: 62rem;
-    width: 118%;
-}
+    .home-brand img {
+        max-width: 62rem;
+        width: 118%;
+    }
 
     .home-content h3 {
         font-size: 2rem;
@@ -770,9 +774,9 @@ span {
     }
 
     .home-brand img {
-    max-width: 54rem;
-    width: 122%;
-}
+        max-width: 54rem;
+        width: 122%;
+    }
 }
 
 @media (max-width: 450px) {
@@ -781,7 +785,7 @@ span {
     }
 
     .logo-brand img {
-        height: 4.2rem;
+        height: 5.2rem;
     }
 
     .home-content h1 {
@@ -797,9 +801,9 @@ span {
     }
 
     .home-brand img {
-    max-width: 48rem;
-    width: 128%;
-}
+        max-width: 48rem;
+        width: 128%;
+    }
 
     .contact form .input-box input {
         width: 100%;
@@ -825,7 +829,7 @@ span {
     }
 
     .home-brand img {
-    max-width: 42rem;
-    width: 132%;
-}
+        max-width: 42rem;
+        width: 132%;
+    }
 }
