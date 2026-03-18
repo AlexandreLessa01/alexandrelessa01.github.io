@@ -135,7 +135,7 @@ span {
 /* HOME */
 .home {
     display: grid;
-    grid-template-columns: 1.75fr 0.55fr;
+    grid-template-columns: 1.85fr 0.55fr;
     align-items: center;
     gap: 0;
     min-height: 100vh;
@@ -147,12 +147,12 @@ span {
     align-items: center;
     justify-content: flex-start;
     overflow: visible;
-    margin-left: -8rem;
+    margin-left: -12rem;
 }
 
 .home-brand img {
     width: 100%;
-    max-width: 136rem;
+    max-width: 150rem;
     border-radius: 0;
     box-shadow: none;
     background: transparent;
@@ -590,9 +590,19 @@ span {
 }
 
 /* BREAKPOINTS */
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
     .home-brand img {
-        max-width: 124rem;
+        max-width: 142rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .home {
+        grid-template-columns: 1.72fr 0.58fr;
+    }
+
+    .home-brand img {
+        max-width: 132rem;
     }
 }
 
@@ -602,11 +612,15 @@ span {
     }
 
     .home {
-        grid-template-columns: 1.6fr 0.6fr;
+        grid-template-columns: 1.62fr 0.62fr;
+    }
+
+    .home-brand {
+        margin-left: -10rem;
     }
 
     .home-brand img {
-        max-width: 112rem;
+        max-width: 122rem;
     }
 }
 
@@ -624,7 +638,7 @@ span {
     }
 
     .home {
-        grid-template-columns: 1.45fr 0.65fr;
+        grid-template-columns: 1.5fr 0.7fr;
     }
 
     .home-content h1 {
@@ -635,8 +649,12 @@ span {
         height: 6.6rem;
     }
 
+    .home-brand {
+        margin-left: -8rem;
+    }
+
     .home-brand img {
-        max-width: 102rem;
+        max-width: 112rem;
     }
 }
 
@@ -644,7 +662,7 @@ span {
     .home {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: .5rem;
+        gap: 0;
         min-height: auto;
         padding-top: 13rem;
         padding-bottom: 5rem;
@@ -655,12 +673,12 @@ span {
         justify-content: center;
         overflow: visible;
         margin-left: 0;
-        margin-bottom: -2rem;
+        margin-bottom: -1rem;
     }
 
     .home-brand img {
-        max-width: 88rem;
-        width: 155%;
+        max-width: 110rem;
+        width: 190%;
     }
 
     .home-content {
@@ -738,8 +756,8 @@ span {
     }
 
     .home-brand img {
-        max-width: 82rem;
-        width: 165%;
+        max-width: 100rem;
+        width: 220%;
     }
 
     .home-content h3 {
@@ -789,8 +807,8 @@ span {
     }
 
     .home-brand img {
-        max-width: 74rem;
-        width: 178%;
+        max-width: 92rem;
+        width: 245%;
     }
 }
 
@@ -816,8 +834,8 @@ span {
     }
 
     .home-brand img {
-        max-width: 68rem;
-        width: 192%;
+        max-width: 84rem;
+        width: 270%;
     }
 
     .contact form .input-box input {
@@ -844,7 +862,7 @@ span {
     }
 
     .home-brand img {
-        max-width: 60rem;
-        width: 205%;
+        max-width: 76rem;
+        width: 285%;
     }
 }
