@@ -70,7 +70,7 @@ img {
 }
 
 .logo-brand img {
-    height: 7.2rem;
+    height: 7rem;
     width: auto;
     border-radius: 0;
     filter: drop-shadow(0 0 8px rgba(79, 220, 255, 0.10));
@@ -88,7 +88,7 @@ img {
 .navbar a:hover,
 .navbar a.active,
 .header.sticky .navbar a.active {
-    color: var(--main-color) !important;
+    color: var(--main-color);
 }
 
 .header.sticky .navbar a {
@@ -102,7 +102,7 @@ img {
     bottom: -6px;
     width: 100%;
     height: .2rem;
-    background: var(--main-color) !important;
+    background: var(--main-color);
 }
 
 .header.sticky .navbar a::before {
@@ -123,7 +123,7 @@ section {
 }
 
 span {
-    color: var(--main-color) !important;
+    color: var(--main-color);
 }
 
 .heading {
@@ -135,9 +135,9 @@ span {
 /* HOME */
 .home {
     display: grid;
-    grid-template-columns: 1.85fr 0.55fr;
+    grid-template-columns: 1.15fr 0.85fr;
     align-items: center;
-    gap: 0;
+    gap: 4rem;
     min-height: 100vh;
     padding-top: 14rem;
 }
@@ -145,37 +145,37 @@ span {
 .home-brand {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     overflow: visible;
-    margin-left: -12rem;
+    margin-left: 0;
 }
 
 .home-brand img {
     width: 100%;
-    max-width: 150rem;
+    max-width: 82rem;
     border-radius: 0;
     box-shadow: none;
     background: transparent;
 }
 
 .home .home-content {
-    max-width: 54rem;
+    max-width: 58rem;
     margin-left: auto;
     padding-left: 0;
 }
 
 .home-content h3 {
     font-size: 2.1rem;
-    color: var(--main-color) !important;
+    color: var(--main-color);
     line-height: 1.4;
     margin-bottom: 1.2rem;
     font-weight: 700;
 }
 
 .home-content h1 {
-    font-size: 5.6rem;
+    font-size: 5.8rem;
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1.08;
     margin-bottom: 2rem;
     color: var(--white-color);
 }
@@ -200,29 +200,29 @@ span {
     align-items: center;
     width: 4.4rem;
     height: 4.4rem;
-    background: rgba(79, 220, 255, 0.06) !important;
-    border: .2rem solid var(--main-color) !important;
+    background: rgba(79, 220, 255, 0.06);
+    border: .2rem solid var(--main-color);
     border-radius: 50%;
-    box-shadow: 0 .2rem .8rem rgba(79, 220, 255, 0.08) !important;
+    box-shadow: 0 .2rem .8rem rgba(79, 220, 255, 0.08);
     font-size: 2rem;
-    color: var(--main-color) !important;
+    color: var(--main-color);
     transition: .35s ease;
 }
 
 .home-content .social-media a:hover {
-    background: var(--main-color) !important;
-    color: #041018 !important;
+    background: var(--main-color);
+    color: #041018;
     transform: translateY(-3px);
 }
 
 .btn {
     display: inline-block;
     padding: 1.3rem 2.8rem;
-    background: var(--main-color) !important;
+    background: var(--main-color);
     border-radius: .8rem;
-    box-shadow: 0 .4rem 1.4rem rgba(79, 220, 255, 0.18) !important;
+    box-shadow: 0 .4rem 1.4rem rgba(79, 220, 255, 0.18);
     font-size: 1.6rem;
-    color: #041018 !important;
+    color: #041018;
     letter-spacing: .04rem;
     font-weight: 700;
     border: .2rem solid transparent;
@@ -230,9 +230,9 @@ span {
 }
 
 .btn:hover {
-    background: transparent !important;
-    color: var(--main-color) !important;
-    border-color: var(--main-color) !important;
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--main-color);
     transform: translateY(-2px);
 }
 
@@ -300,19 +300,19 @@ span {
     border-radius: 2rem;
     box-shadow: 0 .6rem 2rem rgba(0, 0, 0, .18);
     text-align: center;
-    border: 1px solid rgba(79, 220, 255, 0.18) !important;
+    border: 1px solid rgba(79, 220, 255, 0.18);
     transition: .35s ease;
 }
 
 .services-container .services-box:hover {
     transform: translateY(-6px);
     box-shadow: 0 1.2rem 2.6rem rgba(0, 0, 0, .24);
-    border-color: rgba(79, 220, 255, 0.4) !important;
+    border-color: rgba(79, 220, 255, 0.4);
 }
 
 .services-box i {
     font-size: 6.6rem;
-    color: var(--main-color) !important;
+    color: var(--main-color);
 }
 
 .services-box h3 {
@@ -322,7 +322,7 @@ span {
 }
 
 .services-box:hover h3 {
-    color: var(--main-color) !important;
+    color: var(--main-color);
 }
 
 .services-box p {
@@ -572,9 +572,9 @@ span {
     justify-content: center;
     align-items: center;
     padding: .8rem;
-    background: var(--main-color) !important;
+    background: var(--main-color);
     border-radius: .8rem;
-    border: .2rem solid var(--main-color) !important;
+    border: .2rem solid var(--main-color);
     outline: .2rem solid transparent;
     transition: .35s ease;
 }
@@ -590,19 +590,9 @@ span {
 }
 
 /* BREAKPOINTS */
-@media (max-width: 1600px) {
-    .home-brand img {
-        max-width: 142rem;
-    }
-}
-
 @media (max-width: 1400px) {
-    .home {
-        grid-template-columns: 1.72fr 0.58fr;
-    }
-
     .home-brand img {
-        max-width: 132rem;
+        max-width: 74rem;
     }
 }
 
@@ -612,15 +602,11 @@ span {
     }
 
     .home {
-        grid-template-columns: 1.62fr 0.62fr;
-    }
-
-    .home-brand {
-        margin-left: -10rem;
+        grid-template-columns: 1.1fr 0.9fr;
     }
 
     .home-brand img {
-        max-width: 122rem;
+        max-width: 68rem;
     }
 }
 
@@ -638,7 +624,8 @@ span {
     }
 
     .home {
-        grid-template-columns: 1.5fr 0.7fr;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 3rem;
     }
 
     .home-content h1 {
@@ -646,15 +633,11 @@ span {
     }
 
     .logo-brand img {
-        height: 6.6rem;
-    }
-
-    .home-brand {
-        margin-left: -8rem;
+        height: 6.2rem;
     }
 
     .home-brand img {
-        max-width: 112rem;
+        max-width: 62rem;
     }
 }
 
@@ -662,7 +645,7 @@ span {
     .home {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 0;
+        gap: 1rem;
         min-height: auto;
         padding-top: 13rem;
         padding-bottom: 5rem;
@@ -671,14 +654,13 @@ span {
     .home-brand {
         order: 1;
         justify-content: center;
-        overflow: visible;
         margin-left: 0;
-        margin-bottom: -1rem;
+        margin-bottom: 1rem;
     }
 
     .home-brand img {
-        max-width: 110rem;
-        width: 190%;
+        max-width: 88rem;
+        width: 170%;
     }
 
     .home-content {
@@ -717,7 +699,7 @@ span {
     }
 
     .logo-brand img {
-        height: 6.4rem;
+        height: 5.8rem;
     }
 
     .navbar {
@@ -756,8 +738,8 @@ span {
     }
 
     .home-brand img {
-        max-width: 100rem;
-        width: 220%;
+        max-width: 84rem;
+        width: 200%;
     }
 
     .home-content h3 {
@@ -807,8 +789,8 @@ span {
     }
 
     .home-brand img {
-        max-width: 92rem;
-        width: 245%;
+        max-width: 76rem;
+        width: 220%;
     }
 }
 
@@ -818,7 +800,7 @@ span {
     }
 
     .logo-brand img {
-        height: 5.8rem;
+        height: 5.2rem;
     }
 
     .home-content h1 {
@@ -834,8 +816,8 @@ span {
     }
 
     .home-brand img {
-        max-width: 84rem;
-        width: 270%;
+        max-width: 68rem;
+        width: 240%;
     }
 
     .contact form .input-box input {
@@ -858,11 +840,11 @@ span {
     }
 
     .logo-brand img {
-        height: 5.2rem;
+        height: 4.8rem;
     }
 
     .home-brand img {
-        max-width: 76rem;
-        width: 285%;
+        max-width: 60rem;
+        width: 255%;
     }
 }
