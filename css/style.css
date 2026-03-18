@@ -16,10 +16,10 @@
     --second-bg-color: #0b1018;
     --text-color: #f5f7fb;
     --main-color: #4fdcff;
-    --main-color-dark: #1ea9d6;
+    --main-color-dark: #1aa8d6;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .35);
-    --card-border: rgba(79, 220, 255, 0.16);
+    --card-border: rgba(79, 220, 255, 0.18);
 }
 
 *::selection {
@@ -70,10 +70,10 @@ img {
 }
 
 .logo-brand img {
-    height: 6.4rem;
+    height: 7.2rem;
     width: auto;
     border-radius: 0;
-    filter: drop-shadow(0 0 10px rgba(79, 220, 255, 0.12));
+    filter: drop-shadow(0 0 8px rgba(79, 220, 255, 0.10));
 }
 
 .navbar a {
@@ -302,14 +302,13 @@ span {
     border-radius: 2rem;
     box-shadow: 0 .6rem 2rem rgba(0, 0, 0, .18);
     text-align: center;
-    border: 1px solid var(--card-border);
+    border: 1px solid rgba(79, 220, 255, 0.18);
     transition: .35s ease;
 }
-
 .services-container .services-box:hover {
     transform: translateY(-6px);
     box-shadow: 0 1.2rem 2.6rem rgba(0, 0, 0, .24);
-    border-color: rgba(79, 220, 255, 0.36);
+    border-color: rgba(79, 220, 255, 0.4);
 }
 
 .services-box i {
@@ -598,7 +597,7 @@ span {
     }
 
     .home-brand img {
-    max-width: 92rem;
+    max-width: 90rem;
     }
 }
 
@@ -625,7 +624,7 @@ span {
     }
 
     .logo-brand img {
-        height: 5.4rem;
+        height: 6.2rem;
     }
 }
 
@@ -638,11 +637,13 @@ span {
         padding-top: 13rem;
         padding-bottom: 5rem;
     }
-
-    .home-brand {
-        order: 1;
-        justify-content: center;
-    }
+.home-brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: visible;
+    margin-left: -3rem;
+}
 
     .home-content {
         order: 2;
@@ -679,7 +680,7 @@ span {
     }
 
     .logo-brand img {
-        height: 4.8rem;
+        height: 5.2rem;
     }
 
     .navbar {
@@ -717,9 +718,10 @@ span {
         padding: 12rem 3% 5rem;
     }
 
-    .home-brand img {
-        max-width: 64rem;
-    }
+   .home-brand img {
+    max-width: 62rem;
+    width: 118%;
+}
 
     .home-content h3 {
         font-size: 2rem;
@@ -768,8 +770,9 @@ span {
     }
 
     .home-brand img {
-        max-width: 48rem;
-    }
+    max-width: 54rem;
+    width: 122%;
+}
 }
 
 @media (max-width: 450px) {
@@ -794,8 +797,9 @@ span {
     }
 
     .home-brand img {
-        max-width: 39rem;
-    }
+    max-width: 48rem;
+    width: 128%;
+}
 
     .contact form .input-box input {
         width: 100%;
@@ -817,10 +821,11 @@ span {
     }
 
     .logo-brand img {
-        height: 3.8rem;
+        height: 4.8rem;
     }
 
     .home-brand img {
-        max-width: 33rem;
-    }
+    max-width: 42rem;
+    width: 132%;
+}
 }
