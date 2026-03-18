@@ -135,7 +135,7 @@ span {
 /* HOME */
 .home {
     display: grid;
-    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-columns: 1.75fr 0.55fr;
     align-items: center;
     gap: 0;
     min-height: 100vh;
@@ -147,12 +147,12 @@ span {
     align-items: center;
     justify-content: flex-start;
     overflow: visible;
-    margin-left: -5rem;
+    margin-left: -8rem;
 }
 
 .home-brand img {
     width: 100%;
-    max-width: 116rem;
+    max-width: 136rem;
     border-radius: 0;
     box-shadow: none;
     background: transparent;
@@ -590,13 +590,23 @@ span {
 }
 
 /* BREAKPOINTS */
+@media (max-width: 1400px) {
+    .home-brand img {
+        max-width: 124rem;
+    }
+}
+
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
 
+    .home {
+        grid-template-columns: 1.6fr 0.6fr;
+    }
+
     .home-brand img {
-        max-width: 90rem;
+        max-width: 112rem;
     }
 }
 
@@ -614,7 +624,7 @@ span {
     }
 
     .home {
-        grid-template-columns: 1.28fr 0.72fr;
+        grid-template-columns: 1.45fr 0.65fr;
     }
 
     .home-content h1 {
@@ -624,13 +634,17 @@ span {
     .logo-brand img {
         height: 6.6rem;
     }
+
+    .home-brand img {
+        max-width: 102rem;
+    }
 }
 
 @media (max-width: 991px) {
     .home {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 1.5rem;
+        gap: .5rem;
         min-height: auto;
         padding-top: 13rem;
         padding-bottom: 5rem;
@@ -641,12 +655,12 @@ span {
         justify-content: center;
         overflow: visible;
         margin-left: 0;
-        margin-bottom: -1rem;
+        margin-bottom: -2rem;
     }
 
     .home-brand img {
-        max-width: 78rem;
-        width: 135%;
+        max-width: 88rem;
+        width: 155%;
     }
 
     .home-content {
@@ -724,8 +738,8 @@ span {
     }
 
     .home-brand img {
-        max-width: 70rem;
-        width: 145%;
+        max-width: 82rem;
+        width: 165%;
     }
 
     .home-content h3 {
@@ -775,8 +789,8 @@ span {
     }
 
     .home-brand img {
-        max-width: 62rem;
-        width: 155%;
+        max-width: 74rem;
+        width: 178%;
     }
 }
 
@@ -802,8 +816,8 @@ span {
     }
 
     .home-brand img {
-        max-width: 56rem;
-        width: 165%;
+        max-width: 68rem;
+        width: 192%;
     }
 
     .contact form .input-box input {
@@ -830,7 +844,7 @@ span {
     }
 
     .home-brand img {
-        max-width: 50rem;
-        width: 172%;
+        max-width: 60rem;
+        width: 205%;
     }
 }
